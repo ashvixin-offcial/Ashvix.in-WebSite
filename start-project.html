@@ -5,51 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Start your project with ASHVIX Solutions.">
     <title>Start Your Project | ASHVIX Solutions</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .start-project-page{padding:120px 0 80px}
-        .start-project-header{text-align:center;max-width:800px;margin:0 auto 45px}
-        .start-project-header h1{font-size:3rem;margin:10px 0 15px}
-        .start-project-header p{color:var(--muted);line-height:1.7}
-        .project-form{max-width:1000px;margin:auto;padding:40px;border-radius:22px;background:linear-gradient(145deg,rgba(255,255,255,.035),rgba(40,104,223,.035));border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.35)}
-        .project-form-section-title{margin:15px 0 25px;padding-bottom:12px;color:var(--cyan);font-size:1.2rem;font-weight:800;border-bottom:1px solid var(--line)}
-        .project-form-row{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-        .project-form-group{margin-bottom:22px}
-        .project-form-group label{display:block;margin-bottom:8px;color:#cbd7e6;font-size:.8rem;font-weight:700}
-        .project-form-group input,.project-form-group select,.project-form-group textarea{width:100%;box-sizing:border-box;padding:14px 15px;border-radius:9px;border:1px solid rgba(79,195,247,.18);background:rgba(0,0,0,.30);color:#fff;font-size:.9rem;outline:none}
-        .project-form-group select option{background:#08111b;color:#fff}
-        .project-form-group input:focus,.project-form-group select:focus,.project-form-group textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(79,195,247,.08)}
-        .project-form-group textarea{min-height:130px;resize:vertical}
-        .project-submit-button{width:100%;margin-top:10px;padding:16px;border:none;cursor:pointer;font-weight:800}
-        .project-form-note{margin-top:20px;text-align:center;color:var(--muted);font-size:.78rem;line-height:1.6}
-        .hidden-honey{display:none!important}
-        @media(max-width:700px){.start-project-page{padding:100px 0 60px}.start-project-header h1{font-size:2.2rem}.project-form{padding:25px 18px}.project-form-row{grid-template-columns:1fr}}
-    </style>
+    <link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png"><link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png"><meta name="theme-color" content="#050914"><meta property="og:type" content="website"><meta property="og:site_name" content="ASHVIX Solutions"><meta property="og:title" content="Start Your Project | ASHVIX Solutions"><meta property="og:description" content="Start your project with ASHVIX Solutions."><meta property="og:image" content="https://ashvix.in/assets/img/og-image.jpg"><meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="style.css?v=3d1">
 </head>
 <body>
-
-<header class="site-header">
-    <div class="container nav">
-        <a href="index.html" class="brand">
-            <div class="brand-mark">AS</div>
-            <div><strong>ASHVIX</strong><span>SOLUTIONS</span></div>
-        </a>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="projects.html">Projects</a>
-            <a href="products.html">Products</a>
-            <a href="technology.html">Technology</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-</header>
+<canvas id="bg3d" aria-hidden="true"></canvas>
+<nav><div class="container nav">
+<a class="brand" href="index.html"><img class="logo-img" src="assets/img/logo-sm.png" alt="ASHVIX Solutions" width="260" height="155"><span>ASHVIX <span class="grad">SOLUTIONS</span></span></a>
+<div class="links">
+<a class="" href="index.html">Home</a>
+<a class="" href="services.html">Services</a>
+<a class="" href="projects.html">Projects</a>
+<a class="" href="products.html">Products</a>
+<a class="" href="technology.html">Technology</a>
+<a class="" href="contact.html">Contact</a>
+</div><a class="btn primary" href="start-project.html">Start project</a></div></nav>
 
 <main>
-<section class="start-project-page">
-<div class="container">
-
-    <div class="start-project-header">
+<header class="page-hero"><div class="container hero-grid"><div class="hero-copy start-project-header">
         <div class="tag">START YOUR PROJECT</div>
         <h1>Let's Build Your <span class="grad">Project</span></h1>
         <p>
@@ -58,7 +31,9 @@
             or automation requirement. Our team will review your
             requirements and contact you.
         </p>
-    </div>
+    </div><div class="stage" data-scene="rocket" role="img" aria-label="3D rocket"><img class="stage-fallback" src="assets/img/logo.png" alt="" width="900" height="538"></div></div></header>
+<section class="start-project-page">
+<div class="container">
 
     <!-- FormSubmit: no PHP or backend is required on your hosting -->
     <form action="https://api.web3forms.com/submit" method="POST" class="project-form">
@@ -234,9 +209,7 @@
         >
         </div>
 
-        <button type="submit" class="btn primary project-submit-button">
-            SEND PROJECT ENQUIRY
-        </button>
+        <button type="submit" class="btn primary project-submit-button">Send project enquiry</button>
 
         <div class="project-form-note">
             Your project details will be sent directly to
@@ -274,6 +247,6 @@
         dateInput.min = `${yyyy}-${mm}-${dd}`;
     })();
 </script>
-
+<script src="assets/js/three.min.js" defer></script><script src="assets/js/ashvix3d.js" defer></script>
 </body>
 </html>
